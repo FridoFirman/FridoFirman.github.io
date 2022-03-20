@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Perusahaan XYZ</title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">XYZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Homepage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center text-light">
+      <img src="img/XYZ Icon.jpg" alt="icon" width="200" class="rounded-circle" />
+      <h1 class="display-4">XYZ Company</h1>
+      <p class="lead">
+        Website perusahaan ini dibuat untuk memenuhi tugas UTS mata kuliah: Pemrograman Berbasis Web
+        <br />
+        Frido Firman Fadilah | 2010631250048 | 4B Sistem Informasi |
+      </p>
+    </section>
+    <!-- End Jumbotron -->
+
+    <!-- Blog -->
+    <section id="blog">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Blog</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/blog1.jpg" class="card-img-top" alt="blog1" />
+              <div class="card-body">
+                <h5 class="card-title">10 Game Nintendo Switch Terbaik di Dunia Tahun 2021</h5>
+                <a href="https://gamebrott.com/10-game-terbaik-nintendo-switch-di-dunia-tahun-2021" class="btn btn-primary">Go >></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/blog2.jpg" class="card-img-top" alt="blog3" />
+              <div class="card-body">
+                <h5 class="card-title">Membuat Projek Web Sendiri dengan HTML</h5>
+                <a href="https://www.petanikode.com/html-project/" class="btn btn-primary">Go >></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/blog3.jpg" class="card-img-top" alt="blog5" />
+              <div class="card-body">
+                <h5 class="card-title">Inspirasi Setup Kerja Minimalis di Rumah</h5>
+                <a href="https://www.galaxyite.com/2020/11/setup-meja-kerja-komputer-di-rumah.html" 
+                class="btn btn-primary">Go >></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Blog -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>About</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-5">Website ini sangat teknologicocok untuk kalian yang menyukai hal-hal yang berhubungan dengan teknologi.
+                                Kami akan memberikan informasi seputar teknologi, mulai dari, gear komputer, game terkini, tips and trick 
+                                coding, review gadget, dan masih banyak yang lain.</div>
+          <div class="col-md-5">Website kami akan update 3 minggu sekali, yaitu pada hari Rabu, Jumat, dan Minggu. Jangan lupa untuk selalu 
+                                pantau sosmed kami yang sudah dicantumkan dibawah agar kalian selalu mendapatkan update di website ini.  
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center text-light mb-3">
+          <div class="col">
+            <h2>Contact</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3 text-light">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" />
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">Pesan</label>
+                  <textarea class="form-control" id="pesan" rows="5"></textarea>
+                </div>
+              <button onclick="myalert()" type="submit" class="btn">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer>
+      <footer class="text-center bg-dark text-white">
+        <div class="container pt-4">
+          <!-- Section: Social media -->
+          <section1 class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.facebook.com/fridofirmanf"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <!-- Instagram -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.instagram.com/fridofirman_"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-instagram"></i></a>
+      
+            <!-- Linkedin -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://www.linkedin.com/in/frido-firman-fadilah-068044229/"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn btn-link btn-floating btn-lg text-dark m-1"
+              href="https://github.com/FridoFirman"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-github"></i
+            ></a>
+          </section1>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center text-light p-3">
+          XYZ Company © 2022 Copyright
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- End Footer -->
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

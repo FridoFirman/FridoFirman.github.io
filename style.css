@@ -1,0 +1,29 @@
+.jumbotron {
+  padding-top: 7rem;
+  background-image: linear-gradient(#333333 90%, #1db9c3);
+  background-color: #333333;
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+
+#blog {
+  background-image: linear-gradient(#1db9c3 90%, #e900ff);
+  background-color: #1db9c3;
+}
+
+#about {
+  background-image: linear-gradient(#e900ff 90%, #333333);
+  background-color: #e900ff;
+}
+
+#contact {
+  background-color: #333333;
+}
+
+.btn {
+  margin-top: 1rem;
+  background-color: #1db9c3;
+}
